@@ -1,0 +1,30 @@
+/* Custom animation for fade effect */
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.fade-carousel {
+  animation: fade 6s infinite;
+}
+
+.fade-carousel:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.fade-carousel:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
